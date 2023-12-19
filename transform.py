@@ -4,7 +4,7 @@ import unicodedata
 
 class Transformer:
     def __init__(self):
-        self.udb = list(chr(n) for n in range(0x10FFFF))
+        self.udb = [chr(n) for n in range(0x10FFFF)]
 
     def __get_variant(self, character):
         return random.choice(
